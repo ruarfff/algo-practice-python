@@ -1,14 +1,16 @@
-def count_chars(s):
-    chr_counts = {}
-    for c in s:
-        if c not in chr_counts:
-            chr_counts[c] = 0
-        chr_counts[c] += 1
-    return chr_counts
+from collections import Counter
+
+# def count_chars(s):
+#     chr_counts = {}
+#     for c in s:
+#         if c not in chr_counts:
+#             chr_counts[c] = 0
+#         chr_counts[c] += 1
+#     return chr_counts
 
 def is_anagram(s1, s2):
-    s1_counts = count_chars(s1)
-    s2_counts = count_chars(s2)
+    s1_counts = Counter(s1)
+    s2_counts = Counter(s2)
     return s1_counts == s2_counts
 
 
