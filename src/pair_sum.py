@@ -1,13 +1,5 @@
 import pytest
 
-# O(n2) - space O(1)
-# def pair_sum(nums: int, sum: int) -> tuple[int, int]:
-#     for i, n1 in enumerate(nums):
-#         for j, n2 in enumerate(nums):
-#             if i != j and n1 + n2 == sum:
-#                 return (i, j)
-#     return ()
-
 
 # O(n) - space O(n)
 def pair_sum(nums: int, sum: int) -> tuple[int, int] | None:
